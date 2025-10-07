@@ -10,7 +10,7 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
-    <title>jojo</title>
+    <title>Untuk Detha</title>
 </head>
 <body>
     <audio id="linkmp3">assets/audio/backsound.mp3</audio>
@@ -21,7 +21,7 @@
         <div id="suratin" onClick="memulai(); audio.play();">
             <img src="assets/image/amplop.png"/>
         </div>
-        <p id="ket">BUKA AMPLOP INI</p>
+        <p id="ket">KLIK AMPLOPNYA YA, SAYANG</p>
         <div>
             <blockquote id='bq'>
             <div>
@@ -30,15 +30,15 @@
               <img src="assets/gif/gif_3.gif" id="fotoakhir3"/>
               <img src="assets/gif/gif_4.gif" id="fotoakhir4"/>
             </div>
-            <p id="kalimat">Hai Detha Apakabar? ,boleh nggak aku ngasih tahu sesuatu</p>
+            <p id="kalimat">Hai Detha kesayangannya abang, apa kabar? Boleh nggak abang ngasih tahu sesuatu?</p>
             <p id="kalimatb"></p>
             <p id="kalimatc"></p>
-            <p id="kalimat2">sebenernya aku kangen sama kamu tapi malu😆, jadi aku buat web ini maaf ya kalau caranya cupu❤️</p>
-            <p id="kalimatb2"> berharap suatu saat nanti kita bisa jalan bareng berdua dengan status kamu bububku🤣🤣🤣🤣🤣 </p>
-            <p id="kalimatc2">eh tapi kamu nya pasti nggak akan mau sama aku karena dikira cuek, yah mau gimana lagi aku kan kerja buat masa depan kita berdua nanti❤️❤️😆❤️❤️<b id="ctimer" style="font-size:24px">15</b></p>
-            <p id="kalimat3">Tapi biarin aja deh 😜 mau kamu percaya atau tidak</p>
-            <p id="kalimatb3">yang penting aku tetep sayang sama kamu meskipun tidak ada komunikasi diantara kita ❤️ 
-				kalau kamu juga kangen sama aku coba kirim pesan lewat tombol dibawah
+            <p id="kalimat2">Sebenernya abang kangen banget sama Detha tapi malu 😆, jadi abang buat web ini. Maaf ya kalau caranya agak beda ❤️</p>
+            <p id="kalimatb2">Berharap suatu saat nanti, semua doa dan cerita kita di "Detha Time" bisa jadi kenyataan 🤣❤️</p>
+            <p id="kalimatc2">Kadang abang sibuk dan kelihatan capek, tapi Detha tahu kan, semua usaha abang itu buat masa depan kita nanti ❤️❤️😆❤️❤️<b id="ctimer" style="font-size:24px">15</b></p>
+            <p id="kalimat3">Mau Detha percaya atau tidak 😜</p>
+            <p id="kalimatb3">Yang penting, abang tetep sayang banget sama Detha. Setiap obrolan kita selalu jadi penguat abang ❤️.
+				Kalau Detha juga kangen sama abang, coba kirim pesan lewat tombol di bawah ya.
 			</p>
 			
             <p id="kalimatc3"> </p>
@@ -46,9 +46,9 @@
         </div>
         <div id="Tombol">
             <a id="By" onClick="multifungsi()">
-              <b id="tmbl">Boleh</b>
+              <b id="tmbl">Lanjutin, Bang >.<</b>
             </a>
-            <a id="Bn" onClick="ditolak()">Nggak palingan nggak penting</a>
+            <a id="Bn" onClick="ditolak()">Nggak mau ah, mager 😜</a>
             <a id="Bn2" onClick="ditolak2()"></a>
         </div>
     </div>
@@ -63,8 +63,9 @@ fungsi = 0;
 Bn2.innerHTML = Bn.innerHTML;
 
 function showDiv() {
-    nomorWhatsapp = ""
-	pesanwhatsapp = "aku juga kangen , semoga ya 🤭❤️";
+    // GANTI NOMOR WHATSAPP DI SINI (diawali 62 tanpa +)
+    nomorWhatsapp = "628xxxxxxxxxx";
+	pesanwhatsapp = "Abang Jo, Detha juga kangen! Semoga semua yang kita doakan terwujud ya ❤️";
 	Bn2.style.display = "none";
 	Content.style = "opacity:1;margin-top:15vh;";
 	ket.style = "margin-top:30px";
@@ -131,7 +132,7 @@ function multifungsi() {
 	}
 }
 async function menuju() {
-	await swals.fire('', 'Kirim tanggapan kamu ke WhatsApp aku, ya!', 'success');
+	await swals.fire('', 'Kirim balasannya ke WhatsApp abang ya, Detha!', 'success');
 	window.location = "https://api.whatsapp.com/send?phone=" + nomorWhatsapp + "&text=" + pesanwhatsapp;
 	Tombol.style = "margin-top:15px;opacity:1;transform: scale(1);";
 }
